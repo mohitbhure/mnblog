@@ -1,0 +1,195 @@
+2017-09-19 17:47:30 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The directory does not exist: D:\blog\web/assets in D:\blog\vendor\yiisoft\yii2\web\AssetManager.php:213
+Stack trace:
+#0 D:\blog\vendor\yiisoft\yii2\base\Object.php(107): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 D:\blog\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#3 D:\blog\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 D:\blog\vendor\yiisoft\yii2\BaseYii.php(348): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 D:\blog\vendor\yiisoft\yii2\di\ServiceLocator.php(135): yii\BaseYii::createObject(Array)
+#6 D:\blog\vendor\yiisoft\yii2\base\Application.php(605): yii\di\ServiceLocator->get('assetManager')
+#7 D:\blog\vendor\yiisoft\yii2\web\View.php(225): yii\base\Application->getAssetManager()
+#8 D:\blog\vendor\yiisoft\yii2\web\View.php(285): yii\web\View->getAssetManager()
+#9 D:\blog\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\Home...')
+#10 D:\blog\themes\boot_admin\views\layouts\main.php(11): yii\web\AssetBundle::register(Object(yii\web\View))
+#11 D:\blog\vendor\yiisoft\yii2\base\View.php(330): require('D:\\blog\\themes\\...')
+#12 D:\blog\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\blog\\themes\\...', Array)
+#13 D:\blog\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('D:\\blog\\themes\\...', Array, Object(app\controllers\SiteController))
+#14 D:\blog\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<div class="ser...')
+#15 D:\blog\controllers\SiteController.php(64): yii\base\Controller->render('index')
+#16 [internal function]: app\controllers\SiteController->actionIndex()
+#17 D:\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#18 D:\blog\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#19 D:\blog\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#20 D:\blog\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#21 D:\blog\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 D:\blog\web\index.php(12): yii\base\Application->run()
+#23 {main}
+2017-09-19 17:47:30 [::1][-][-][info][application] $_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\blog\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49819'
+    'SERVER_SOFTWARE' => 'PHP 7.1.9 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\blog\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1505836050.3953
+    'REQUEST_TIME' => 1505836050
+]
+2017-09-19 17:48:13 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The file or directory to be published does not exist: D:\blog\vendor\bower/jquery/dist in D:\blog\vendor\yiisoft\yii2\web\AssetManager.php:454
+Stack trace:
+#0 D:\blog\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('D:\\blog\\vendor\\...', Array)
+#1 D:\blog\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 D:\blog\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 D:\blog\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 D:\blog\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 D:\blog\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 D:\blog\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\Home...')
+#7 D:\blog\themes\boot_admin\views\layouts\main.php(11): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 D:\blog\vendor\yiisoft\yii2\base\View.php(330): require('D:\\blog\\themes\\...')
+#9 D:\blog\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\blog\\themes\\...', Array)
+#10 D:\blog\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('D:\\blog\\themes\\...', Array, Object(app\controllers\SiteController))
+#11 D:\blog\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<div class="ser...')
+#12 D:\blog\controllers\SiteController.php(64): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 D:\blog\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 D:\blog\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#16 D:\blog\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#17 D:\blog\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#18 D:\blog\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 D:\blog\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-09-19 17:48:13 [::1][-][-][info][application] $_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\blog\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49823'
+    'SERVER_SOFTWARE' => 'PHP 7.1.9 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\blog\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1505836093.3408
+    'REQUEST_TIME' => 1505836093
+]
+2017-09-19 18:04:37 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/login in D:\blog\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 D:\blog\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('login', Array)
+#1 D:\blog\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/login', Array)
+#2 D:\blog\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\blog\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\blog\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\blog\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\blog\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-09-19 18:04:37 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf' => '56583b7417e2728d914aece4da308fd48b8239b6851d6fb12932165d5dab08eaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"%ø:CqÑAò¦?bÎ’yÃj@F”ò4cè‰˜¨\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\blog\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50281'
+    'SERVER_SOFTWARE' => 'PHP 7.1.9 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '5000'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\blog\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'HTTP_HOST' => 'localhost:5000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=56583b7417e2728d914aece4da308fd48b8239b6851d6fb12932165d5dab08eaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%25%F8%3AC%01q%D1A%F2%A6%3Fb%03%CE%92y%C3j%40F%94%1A%F2%7F%0D4c%E8%89%0E%98%A8%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1505837077.4315
+    'REQUEST_TIME' => 1505837077
+]
+2017-09-20 03:11:38 [::1][16][a7cgpceu7jod2pksuhelb5ba00][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: blog/add in D:\blog\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 D:\blog\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('add', Array)
+#1 D:\blog\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('blog/add', Array)
+#2 D:\blog\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\blog\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\blog\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\blog\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\blog\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-09-20 03:11:38 [::1][16][a7cgpceu7jod2pksuhelb5ba00][info][application] $_GET = [
+    'r' => 'blog/add'
+]
+
+$_COOKIE = [
+    '_csrf' => '41d237bfb711ea8c365e2e762e78e1a36e89edbe3ea25b74ceca5ab5c72dd577a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"œƒM$]²m2¯ïX]fÓßı©qJ OÒBÛ—$\";}'
+    'PHPSESSID' => 'a7cgpceu7jod2pksuhelb5ba00'
+    '_identity' => '003faff68568297a004eae91b90a884aab663c7caf3ce6811a7c31212aecc508a:2:{i:0;s:9:\"_identity\";i:1;s:17:\"[16,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 16
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\blog\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51663'
+    'SERVER_SOFTWARE' => 'PHP 7.1.9 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '5000'
+    'REQUEST_URI' => '/index.php?r=blog/add'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\blog\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=blog/add'
+    'HTTP_HOST' => 'localhost:5000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=41d237bfb711ea8c365e2e762e78e1a36e89edbe3ea25b74ceca5ab5c72dd577a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%9C%16%83M%8D%24%5D%B2m2%AF%08%EFX%5D%10f%D3%DF%11%FD%A9q%18J+O%D2B%DB%97%24%22%3B%7D; PHPSESSID=a7cgpceu7jod2pksuhelb5ba00; _identity=003faff68568297a004eae91b90a884aab663c7caf3ce6811a7c31212aecc508a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A17%3A%22%5B16%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1505869898.3367
+    'REQUEST_TIME' => 1505869898
+]
